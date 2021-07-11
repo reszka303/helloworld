@@ -1,10 +1,7 @@
 package pl.javastart.divisors.byMe;
 
-public class Divisor {
+public class DivisorFinder {
     protected int[] getDivisor(int number) {
-        if (number == 0) {
-            System.out.println("Libcza 0 ma nieskończenie wiele dzielników");
-        }
         if (number < 0) {
             return addDivisorsByNegativeNumber(number);
         } else {
