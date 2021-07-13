@@ -15,6 +15,7 @@
         <title>JSP Test</title>
     </head>
     <body>
+        <h1>To jest nagłówek</h1>
         <!--  Deklaracja HTML  -->
         <%--  Deklaracja JSP  --%>
         <%--  ↓↓ skryptlet pomiędzy tymi znacznikami zapisujemy kod Javy  --%>
@@ -27,6 +28,8 @@
         <% for (int i = 0; i < 5; i++) { %>
             <p>Paragraf numer <%= i %></p>
         <% } %>
+
+        <script src="../../../html/1welcome/script.js"></script>
     </body>
 </html>
 <%-- ↑ Statyczny kod HTML ↑ --%>
