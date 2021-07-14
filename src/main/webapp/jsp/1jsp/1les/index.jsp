@@ -28,8 +28,6 @@
         <% for (int i = 0; i < 5; i++) { %>
             <p>Paragraf numer <%= i %></p>
         <% } %>
-
-        <script src="../../../html/1welcome/script.js"></script>
     </body>
 </html>
 <%-- ↑ Statyczny kod HTML ↑ --%>
