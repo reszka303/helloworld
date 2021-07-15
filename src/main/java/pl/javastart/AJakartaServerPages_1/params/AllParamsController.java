@@ -1,12 +1,10 @@
-package pl.javastart.params;
+package pl.javastart.AJakartaServerPages_1.params;
 
-import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Collection;
 import java.util.Map;
 
 @WebServlet("/allparams")

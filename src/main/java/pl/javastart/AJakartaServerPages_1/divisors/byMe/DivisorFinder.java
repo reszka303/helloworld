@@ -1,4 +1,4 @@
-package pl.javastart.divisors.byMe;
+package pl.javastart.AJakartaServerPages_1.divisors.byMe;
 
 public class DivisorFinder {
     protected int[] getDivisor(int number) {

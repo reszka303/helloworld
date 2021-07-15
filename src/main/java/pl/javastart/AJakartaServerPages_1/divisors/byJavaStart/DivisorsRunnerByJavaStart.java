@@ -1,4 +1,4 @@
-package pl.javastart.divisors.byJavaStart;
+package pl.javastart.AJakartaServerPages_1.divisors.byJavaStart;
 
 import java.util.List;
 

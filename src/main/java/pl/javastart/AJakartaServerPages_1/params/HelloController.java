@@ -1,4 +1,4 @@
-package pl.javastart.params;
+package pl.javastart.AJakartaServerPages_1.params;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
