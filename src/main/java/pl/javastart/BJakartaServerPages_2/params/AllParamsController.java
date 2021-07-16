@@ -1,4 +1,4 @@
-package pl.javastart.AJakartaServerPages_1.params;
+package pl.javastart.BJakartaServerPages_2.params;
 
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;

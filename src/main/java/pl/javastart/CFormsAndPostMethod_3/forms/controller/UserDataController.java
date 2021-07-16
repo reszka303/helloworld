@@ -1,9 +1,9 @@
-package pl.javastart.BFormsAndPostMethod_2.forms.controller;
+package pl.javastart.CFormsAndPostMethod_3.forms.controller;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-import pl.javastart.BFormsAndPostMethod_2.forms.model.User;
+import pl.javastart.CFormsAndPostMethod_3.forms.model.User;
 
 import java.io.IOException;
 import java.io.PrintWriter;

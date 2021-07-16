@@ -1,4 +1,4 @@
-package pl.javastart.AJakartaServerPages_1.divisors.byJavaStart;
+package pl.javastart.AServlets_1.divisors.byJavaStart;
 
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;

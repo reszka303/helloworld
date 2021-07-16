@@ -1,4 +1,4 @@
-package pl.javastart.AJakartaServerPages_1.divisors.byMe;
+package pl.javastart.AServlets_1.divisors.byMe;
 
 import java.util.Arrays;
 

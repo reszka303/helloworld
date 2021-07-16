@@ -1,4 +1,4 @@
-package pl.javastart.BFormsAndPostMethod_2.forms.model;
+package pl.javastart.CFormsAndPostMethod_3.forms.model;
 
 public class User {
     private String username;
