@@ -1,4 +1,4 @@
-package pl.javastart.CFormsAndPostMethod_3.task;
+package pl.javastart.CFormsAndPostMethod_3.task.byMe;
 
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -33,6 +33,7 @@ public class PasswordValidator extends HttpServlet {
 
     private void isSafe(String password, HttpServletResponse response) throws IOException {
         if (!isRightLength(password)) {
+            printLine("", response);
             printLine("<ul>", response);
             printLine("<li>Hasło musi zawierać co najmniej 5 liter</li>", response);
         } if (!isLowerCase(password)) {
@@ -43,7 +44,7 @@ public class PasswordValidator extends HttpServlet {
             printLine("<li>Hasło musi zawierać co najmniej jedną cyfrę</li>", response);
         } if (!isSpecialCharacter(password)) {
             printLine("<li>Hasło musi zawierać co najmniej jeden znak specjalny</li>", response);
-            printLine("<ul>", response);
+            printLine("</ul>", response);
         } else {
             printLine("Hasło spełnia wszystkie kryteria bezpieczeństwa", response);
         }
