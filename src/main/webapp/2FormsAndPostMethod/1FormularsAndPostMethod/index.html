@@ -9,7 +9,11 @@
         <form action="userdata" method="post">
             <fieldset>
                 <legend>Podstawowe dane</legend>
+
+<!--w label, atrybut for ma podaną wartość "username" bo ta etykieta dotyczy wejścia
+(input) id username id jest połączone w html-->
                 <label for="username">Nazwa użytkownika</label>
+<!--w inpucie atrubut name ustala nazwę parametru na pasku url w przeglądarce-->
                 <input type="text" name="username" id="username"><br>
                 <label for="password">Hasło</label>
                 <input type="password" name="pass" id="password"><br>
@@ -17,6 +21,7 @@
             <fieldset>
                 <legend>Płeć</legend>
                 <div>
+<!--atrybut value jest ustalana do parametru w pasku url czyli "?name=value" - gender=male-->
                     <input type="radio" name="gender" value="male" id="men">
                     <label for="men">Mężczyzna</label>
                 </div>
