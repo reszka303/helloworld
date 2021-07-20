@@ -1,4 +1,4 @@
-package pl.javastart.DMVCPattern_4.lottery;
+package pl.javastart.DMVCPattern_4.lottery.byMe;
 
 import java.util.List;
 

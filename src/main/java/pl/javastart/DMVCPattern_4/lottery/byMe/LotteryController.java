@@ -1,4 +1,4 @@
-package pl.javastart.DMVCPattern_4.lottery;
+package pl.javastart.DMVCPattern_4.lottery.byMe;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -19,7 +19,7 @@ public class LotteryController extends HttpServlet {
     }
 
     private boolean validateParameter(HttpServletRequest request) {
-        String[] numbersParam = request.getParameterValues("number");
+        String[] numbersParam = request.getParameterValues("numbers");
         if (!LotteryManager.checkEqualElements(numbersParam)) {
             request.setAttribute("message", "Kupon utracił ważność, nie możesz" +
                     " podać tych samych cyfr w jednym kuponie");

@@ -1,5 +1,5 @@
 <%@ page import="java.util.Collection" %>
-<%@ page import="pl.javastart.DMVCPattern_4.lottery.LotteryResult" %>
+<%@ page import="pl.javastart.DMVCPattern_4.lottery.byMe.LotteryResult" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>

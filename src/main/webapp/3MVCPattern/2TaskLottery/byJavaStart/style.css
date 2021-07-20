@@ -1,0 +1,38 @@
+/* wyśrodkowanie elementów, ramka i tło */
+main {
+    margin: auto;
+    background-color: floralwhite; /*kolor tła*/
+    border-width: 1px; /*szerokość ramki*/
+    border-style: solid; /*tworzenie ramki*/
+    padding: 5px; /*odsunięcie tekstu od ramki*/
+    text-align: center; /*wyśrodkowanie tekstu*/
+}
+
+/* Na dużych ekranach mniejsza szerokość niż cały ekran */
+@media (min-width: 768px) {
+   main {
+       width: 600px; /*zmniejszenie szerokości ramki*/
+    }
+}
+
+/* Kwadratowe, wyśrodkowane inputy */
+input {
+    font-size: 30px; /*szerokość obszaru zawartości*/
+    height: 2em; /*wysokość obszaru zawartości*/
+    width: 2em; /*szerokość elementu*/
+    text-align: center; /*wypośrodkowanie elementu*/
+}
+
+/* Usunięcie strzałek góra/dół w inputach */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Większy przycisk */
+button {
+    margin-top: 20px; /*przesunięcie przycisku "Wyślij kupon" w dół*/
+    width: 30%; /*poszerzenie przycisku wzdłuż "Wyślij kupon" o 30%*/
+    height: 30px; /*rozszerzenie przycisku w górę i w dół "Wyślij kupon" o 30%*/
+}
