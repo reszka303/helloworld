@@ -1,11 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Mateusz
-  Date: 11.07.2021
-  Time: 14:55
-  To change this template use File | Settings | File Templates.
---%>
-<%--↓ dyrektywa ↓--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%--↓  Statyczny kod HTML ↓ --%>
 <!DOCTYPE html>
