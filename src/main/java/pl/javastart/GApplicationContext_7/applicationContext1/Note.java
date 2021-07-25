@@ -1,4 +1,4 @@
-package pl.javastart.GApplicationContext_7.notes;
+package pl.javastart.GApplicationContext_7.applicationContext1;
 
 public class Note {
     static final String TYPE_PUBLIC = "pub";

@@ -1,4 +1,4 @@
-package pl.javastart.GApplicationContext_7.notes;
+package pl.javastart.GApplicationContext_7.applicationContext1;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
