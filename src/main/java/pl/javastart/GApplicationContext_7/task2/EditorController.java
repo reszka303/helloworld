@@ -7,7 +7,7 @@ import jakarta.servlet.annotation.*;
 import java.io.IOException;
 
 // <form action="editor" method="post">
-@WebServlet("")
+@WebServlet("edit")
 public class EditorController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

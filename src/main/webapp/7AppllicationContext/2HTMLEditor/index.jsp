@@ -28,7 +28,7 @@
         </div>
         <div>
             <h1>TinyMCE Quick Start Guide</h1>
-            <form action="" method="post">
+            <form action="edit" method="post">
                 <textarea id="mytextarea" name="nameFromHTML"><%= request.getAttribute("nameFromHTML") %></textarea>
                 <button style="width: 100%; margin-top: 20px" type="submit">Zapisz zmiany</button>
             </form>
