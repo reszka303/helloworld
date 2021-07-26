@@ -33,13 +33,16 @@
         <ol>
             <c:forEach items="${applicationScope.people}" var="person">
                 <li>
-                    ${fn:toUpperCase(person.firstName.concat(" ").concat(person.lastName))}
-                    (${person.age} lat)/
-                    ${person.gender == 'MALE' ? 'Mężczyzna' : 'Kobieta'}
+                    <c:out value="${fn:toUpperCase(fn:substring(person.firstName, 0, 1))
+                    }${fn:toLowerCase(fn:substring(person.firstName, 1, fn:length(person.firstName)))} -
+                    ${fn:toUpperCase(fn:substring(person.lastName, 0, 1))
+                    }${fn:toLowerCase(fn:substring(person.lastName, 1, fn:length(person.lastName)))}"/>
+                        (${person.age} lat) /
+                        ${person.gender == 'MALE' ? 'Mężczyzna' : 'Kobieta'}
                     <c:if test="${person.age >= 18}">
                         <span style="color: green">Pełnoletni(a)</span>
                     </c:if>
-                    <c:if test="${person.age < 18}">
+                    <c:if test="${person.age <18}">
                         <span style="color: red">Nieletni(a)</span>
                     </c:if>
                 </li>
