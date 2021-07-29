@@ -2,6 +2,6 @@
 <header>
     <ul style="display:inline;">
         <li><a href="${pageContext.request.contextPath}/">Strona główna</a></li>
-        <li><a href="${pageContext.request.contextPath}/details.jsp">Szczegóły</a></li>
+        <li><a href="${pageContext.request.contextPath}/details">Szczegóły</a></li>
     </ul>
 </header>

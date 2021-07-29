@@ -4,7 +4,7 @@
         <title>Szczegóły produktu</title>
     </head>
     <body>
-        <%@ include file="header.jspf"%>
+        <%@ include file="segments/header.jspf"%>
         <main>
             <h1>Szablon strony produktu</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -15,6 +15,6 @@
                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                 culpa qui officia deserunt mollit anim id est laborum</p>
         </main>
-        <%@ include file="footer.jspf"%>
+        <%@ include file="segments/footer.jspf"%>
     </body>
 </html>
