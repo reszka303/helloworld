@@ -1,21 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<!DOCTYPE html>
+    <html lang="pl">
     <head>
-        <title>Strona główna</title>
+        <meta charset="UTF-8">
+        <title>Sekretna strona</title>
     </head>
     <body>
-        <%@ include file="segments/header.jspf"%>
-        <main>
-            <h1>Strona główna</h1>
-            <p>Witamy na stronie głównej naszego sklepu</p>
-            <p>Kupisz u nas m.in.:</p>
-            <ul>
-                <c:forEach var="product" items="${requestScope.products}">
-                    <li><c:out value="${product}"/></li>
-                </c:forEach>
-            </ul>
-        </main>
-        <%@ include file="segments/footer.jspf"%>
+        <form action="${pageContext.request.contextPath}/secret" method="post">
+            <label for="pass">Hasło</label>
+            <input type="password" name="pass" id="pass">
+            <button type="submit">Wyślij</button>
+        </form>
     </body>
 </html>
