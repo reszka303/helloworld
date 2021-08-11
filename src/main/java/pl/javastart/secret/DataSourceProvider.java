@@ -1,4 +1,4 @@
-package pl.javastart.guestbook;
+package pl.javastart.secret;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -14,7 +14,7 @@ class DataSourceProvider {
         if (dataSource == null) {
             Context initContext = new InitialContext();
             Context envContext = (Context) initContext.lookup("java:comp/env/");
-            dataSource = (DataSource) envContext.lookup("jdbc/guestbook");
+            dataSource = (DataSource) envContext.lookup("jdbc/secret");
         }
         return dataSource;
     }
