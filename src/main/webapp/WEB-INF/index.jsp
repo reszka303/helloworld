@@ -1,28 +1,38 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html lang="pl">
     <head>
-        <title>Książka kucharska</title>
-        <style>
-            .recipe {
-                border-style: solid;
-                border-width: 1px;
-                margin: 20px;
-                padding: 20px;
-            }
-        </style>
+        <title>Księga gości</title>
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/style.css">
     </head>
     <body>
-        <h1>Książka kucharska</h1>
-        <c:forEach var="recipe" items="${requestScope.recipes}">
-            <section class="recipe">
-                <h2><c:out value="${recipe.title}"/></h2>
-                <p>Czas przygotowania: ${recipe.prepTime}</p>
-                <h3>Składniki</h3>
-                <p><c:out value="${recipe.ingredients}"/></p>
-                <h3>Sposób przygotowania</h3>
-                <p><c:out value="${recipe.description}"/></p>
+    <main>
+        <section class="form">
+            <h1>Księga gości</h1>
+            <form method="post">
+                <fieldset>
+                    <legend>Zostaw po sobie ślad</legend>
+                    <label>
+                        Twoja nazwa
+                        <input name="author" placeholder="Jan Kowalski">
+                    </label>
+                    <label for="content">Treść wiadomości</label>
+                    <textarea name="message" placeholder="Zacznij pisać..." id="content" rows="5"></textarea>
+                    <button>Wyślij</button>
+                </fieldset>
+            </form>
+        </section>
+        <c:if test="${not empty requestScope.entries}">
+            <section class="entries">
+                <h2>Wasze wpisy (${requestScope.entries.size()})</h2>
+                <c:forEach var="entry" items="${requestScope.entries}">
+                    <div class="entry">
+                        <h3><c:out value="Autor: ${entry.author}"/></h3>
+                        <p><c:out value="${entry.message}"/></p>
+                    </div>
+                </c:forEach>
             </section>
-        </c:forEach>
+        </c:if>
+    </main>
     </body>
 </html>
