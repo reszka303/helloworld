@@ -6,6 +6,7 @@
     <body>
     <h2>Kalkulator</h2>
         <form action="${pageContext.request.contextPath}/calculator" method="post">
+            <p>Jesteś zalogowany jako ${pageContext.request.remoteUser}</p>
             <fieldset>
                 <legend>Wprowadź liczby i wybierz operator</legend>
                 <input type="number" name="first">
